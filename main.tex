@@ -1,0 +1,214 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{url}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.345in}
+\addtolength{\evensidemargin}{-0.345in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.0in}
+
+\setlength{\footskip}{4.09pt}   % don't understand
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNornal}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingEdu}[6]{
+  \vspace{-1pt}
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingNoTitle}[2]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      %\textbf{#1} & #2 \\
+      \textit{\small#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItemNormal}[1]{\resumeItemNornal{#1}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Bao Huynh Thai}} \\ %& \textit{Built by Latex, Docker. Deployed by Github Pages} \\
+   Student & \href{https://github.com/tbaro19}{https://github.com/tbaro19} \textit{(July 2025)}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+   \resumeSubheadingEdu
+      {University of Information Technology, Ho Chi Minh City}{}
+      {Bachelor of Science in Artificial Intelligence}{2023 -- 2027}
+      {GPA: 3.06/4.00}{}
+      
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Evolutionary Learning \& Optimization}{Oct 2024 - Present}
+      {Research Student}{}
+      \resumeItemListStart
+        \resumeItem{Adversarial Attack}
+          {Conducted research on black-box and white-box adversarial attacks targeting OCR systems, vision-language models (VLMs), and similar AI models to evaluate and improve their robustness.}       
+        \resumeSubItemNormal
+          {First author, Paper: Adversarial Robustness Evaluation of a Vietnamese Handwriting OCR System. PGD variants used to evaluate VietOCR robustness on handwriting data.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Multimedia Laboratory}{Feb 2025 - Present}
+      {Research Student}{}
+      \resumeItemListStart
+        \resumeItem{Large Language Models}
+          {Research and development of multimodal systems and pipelines for educational question answering tasks with explainability capabilities.}
+        \resumeItem{3D Objects Retrieval}
+          {Research on systems for 3D object retrieval and reconstruction from images and masked 2D inputs.} 
+        \resumeSubItemNormal
+          {Co-author, Paper: Explainable Large Language Models for Educational Question-Answering: A Multi-Model Ensemble Approach with Structured Reasoning}
+          
+        \resumeSubItemNormal
+          {Co-author, Paper: ROOMELSA: Retrieval of Optimal Objects for Multi-modal Enhanced Language and Spatial Assistance}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Stubborn Strawberries team}{Jan 2025 - Present}
+      {Research Student}{}
+      \resumeItemListStart
+        \resumeItem{Text to 3D models}
+          {Research and improvement of text-to-3D models; developed pipelines integrating multiple models.}
+        \resumeItem{ARM64 CPU Architecture}
+          {Researched performance and addressed emerging issues in ARM64 CPU architecture.} 
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/tbaro19/AdvRE-ViHandOCR}{AdvRE-ViHandOCR}}
+      {Evaluated the adversarial robustness of a Vietnamese handwriting OCR model against PGD white-box attacks. \href{https://github.com/tbaro19/AdvRE-ViHandOCR}{https://github.com/tbaro19/AdvRE-ViHandOCR}}
+    %\resumeSubItem{\href{https://github.com/baonq-me/bgn}{Graduation Thesis}}
+    %  {Somewhat homomorphic encryption over elliptic curve using the BGN cryptosystem.}
+    \resumeSubItem{\href{https://github.com/tbaro19/VNOID}{VNOID}}
+      {Scripts to benchmark the performance of large language models (LLMs) using vLLM. Help you measure throughput, latency, and the effect of CPU offloading on inference.
+      \href{https://github.com/tbaro19/VNOID}{https://github.com/tbaro19/VNOID}}
+      
+\resumeSubHeadingListEnd
+
+
+\section{Skills / Experience}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {Python (scikit-learn, NumPy, Pandas, PyTorch, ...), C++ (Arduino IDE).}
+    \resumeSubItem{Technical Skills}
+      {Linux, Arduino/Raspberry Pi/Jetson Nano, ARM64 CPU Architecture, Adversarial Attack, Computer Vision, NLP, Genetic Algorithm, ...}
+    \resumeSubItem{Teaching Skills}
+      {Lecture Designing, Presentation, Mentoring, Hosting \& Reviewing.}
+\resumeSubHeadingListEnd
+  
+\section{Hobbies}
+  \resumeSubHeadingListStart
+    \resumeSubItemNormal
+      {Research computer science \& ARM64 CPU Architecture topics. Play football, table tennis}
+\resumeSubHeadingListEnd
+
+\section{Social activities}
+  \resumeSubHeadingListStart
+    \resumeSubItemNormal
+      {Mentor of Science Lab programs: ELECTRAHACK 2023, SIP 2024, ICOHACK 2024, SOFTHACK 2025}
+    \resumeSubItemNormal
+      {Organizer/Volunteer of Arduino Day Vietnam 2023}
+    \resumeSubItemNormal
+      {Speak about ARM64 CPU Architecture at Arduino Day Vietnam 2025, HCMC AI Meetup \#1 - Menlo Research, OpenInfra \& Cloud Native Day Vietnam 2025}
+
+\resumeSubHeadingListEnd
+
+% \section{References}
+%     \small{\href{https://hackaday.com/2019/06/06/fablab-saigon-celebrates-a-belated-arduino-day/}{https://hackaday.com/2019/06/06/fablab-saigon-celebrates-a-belated-arduino-day/}}
+%     \small{\href{https://superuser.openinfra.dev/articles/viet-openinfra-user-group-holds-its-30th-meetup/}{https://superuser.openinfra.dev/articles/viet-openinfra-user-group-holds-its-30th-meetup/}}\newline
+%     \small{\href{https://thanhnien.vn/vi-sao-nhieu-nguoi-me-arduino-nen-tang-duoc-cho-la-tien-than-cua-giao-duc-stem-185230704165819482.htm}{https://thanhnien.vn/arduino.html}}
+   
+%-------------------------------------------
+\end{document}
